@@ -1,0 +1,112 @@
+.carousel {
+  height: 500px;
+}
+.carousel-caption {
+  z-index: 10;
+}
+.carousel .item {
+  height: 500px;
+  background-color: transparent;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+.carousel-caption h4 {
+  font-size:300%;
+}
+.carousel-caption h1 {
+  color:#fff;
+  font-size:6rem;
+  font-family:Georgia;
+}
+.carousel-caption h1 span {
+  color:#fff;
+  font-size:4rem;
+  text-shadow:none;
+}
+.carousel-caption h1 {
+  animation: baner 12s ease-in 0.2s infinite;
+  -moz-animation: baner 12s ease-in 0.2s infinite;
+  -webkit-animation: baner 12s ease-in 0.2s infinite;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
+@-webkit-keyframes baner {
+0% {
+-webkit-transform: perspective(300px) rotateY(0deg);
+}
+15%, 100% {
+-webkit-transform: perspective(300px) rotateY(360deg);
+}
+}
+@-moz-keyframes baner {
+0% {
+-moz-transform: perspective(300px) rotateY(0deg);
+}
+15%, 100% {
+-moz-transform: perspective(300px) rotateY(360deg);
+}
+}
+@keyframes baner {
+0% {
+transform: perspective(300px) rotateY(0deg);
+}
+15%, 100% {
+transform: perspective(300px) rotateY(360deg);
+}
+}
+.btn-opacity,.btn-opacity:hover {background:transparent;color:#fff;border:1px solid #fff;}
+.carousel-slideFullIn .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-slideFullIn .carousel-inner .active {
+  transform:scale(1);
+}
+.carousel-slideFullIn .carousel-inner .active.left,
+.carousel-slideFullIn .carousel-inner .active.right {
+  left: 0;
+  transform:scale(0);
+  z-index: 1;
+}
+.carousel-slideFullIn .carousel-inner .next.left,
+.carousel-slideFullIn .carousel-inner .prev.right {
+  animation-name: slideFullIn;
+  -webkit-animation-name: slideFullIn;
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+}
+@-webkit-keyframes slideFullIn {
+  0% {
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+@keyframes slideFullIn {
+  0% {
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+}
+.carousel-slideFullIn .carousel-control {
+  z-index: 2;
+}
