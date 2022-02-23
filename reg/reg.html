@@ -1,32 +1,52 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Регистрация</title>
-	<link rel="stylesheet" href="C:\Users\sapar\Desktop\proj\bootstrap\reg\reg.css">
-</head>
-<body>
-	<form action="">
-		<h1 title="Форма регистрации на сайте">Регистрация</h1>
-		<div class="group">
-			<label for="">Имя пользователя:</label>
-			<input type="text">
-		</div>
-		<div class="group">
-			<label for="">Пароль:</label>
-			<input type="password">
-		</div>
-		<div class="group">
-			<label for="">Пароль еще раз:</label>
-			<input type="password">
-		</div>
-		<div class="group">
-			<label for="">Адрес электронной почты:</label>
-			<input type="email">
-		</div>
-		<div class="group">
-			<center><button>Регистрация</button></center>
-		</div>
-	</form>
-</body>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<link rel="stylesheet" href="C:\Users\sapar\Desktop\proj\bootstrap\reg\reg.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+
+<div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Создать аккаунт</h1>
+                <input type="text" placeholder="Имя" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Пароль" />
+                <button>Регистрация</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Вход</h1>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Пароль" />
+                <a href="#">Забыли пароль?</a>
+                <button>Вход</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Здравствуйте!</h1>
+                    <p>Храните свой пароль в надежном месте и не забывайте его</p>
+                    <button class="ghost" id="signIn">Вход</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Здравствуйте!</h1>
+                    <p>Введите данные войдите и наслаждайтесь любимыми фильмами и сериалами</p>
+                    <button class="ghost" id="signUp">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </div>
+		<script type="text/javascript" src="C:\Users\sapar\Desktop\proj\bootstrap\reg\reg.js">
+
+		</script>
+	</body>
+
 </html>
